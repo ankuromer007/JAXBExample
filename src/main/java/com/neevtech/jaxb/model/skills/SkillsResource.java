@@ -2,33 +2,41 @@ package com.neevtech.jaxb.model.skills;
 
 import java.sql.Timestamp;
 
-public class Skills {
+public class SkillsResource {
+	private long resourceId;
 	private long skillId;
-	private long problemCodeId;
-	private long subTechId;
+	private long proficiencyId;
+	private int skillSet;
 	private long createdBy;
 	private Timestamp creationDate;
 	private long lastUpdatedBy;
 	private Timestamp lastUpdateDate;
-	private long lastUpdateLogin;
+	private long lastUpdateLogin;	
+	private long profileId;
 	
+	public long getResourceId() {
+		return resourceId;
+	}
+	public void setResourceId(long resourceId) {
+		this.resourceId = resourceId;
+	}
 	public long getSkillId() {
 		return skillId;
 	}
 	public void setSkillId(long skillId) {
 		this.skillId = skillId;
 	}
-	public long getProblemCodeId() {
-		return problemCodeId;
+	public long getProficiencyId() {
+		return proficiencyId;
 	}
-	public void setProblemCodeId(long problemCodeId) {
-		this.problemCodeId = problemCodeId;
+	public void setProficiencyId(long proficiencyId) {
+		this.proficiencyId = proficiencyId;
 	}
-	public long getSubTechId() {
-		return subTechId;
+	public int getSkillSet() {
+		return skillSet;
 	}
-	public void setSubTechId(long subTechId) {
-		this.subTechId = subTechId;
+	public void setSkillSet(int skillSet) {
+		this.skillSet = skillSet;
 	}
 	public long getCreatedBy() {
 		return createdBy;
@@ -59,5 +67,11 @@ public class Skills {
 	}
 	public void setLastUpdateLogin(long lastUpdateLogin) {
 		this.lastUpdateLogin = lastUpdateLogin;
+	}
+	public long getProfileId() {
+		return profileId;
+	}
+	public void setProfileId(long profileId) {
+		this.profileId = profileId;
 	}
 }

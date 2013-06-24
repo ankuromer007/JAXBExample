@@ -1,22 +1,26 @@
-package com.neevtech.jaxb.model.territorymanager;
+package com.neevtech.jaxb.model.skills;
 
-import java.sql.Date;
 import java.sql.Timestamp;
 
-public class CalResourceAssign {
-	private long calResourceAssignId;
-	private Date startDateTime;
-	private Date endDateTime;
-	private long calendarId;
-	private String resourceTypeCode;
-	private long resourceId;
-	private String primaryCalendarFlag;
-	private long objectVersionNumber;
+public class FndLookupValues {
+	private String lookupType;
+	private String language;
+	private String lookupCode;
+	private String meaning;
+	private String description;
+	private String enableFlag;
+	private Timestamp startDateActive;
+	private Timestamp endDateActive;
 	private long createdBy;
 	private Timestamp creationDate;
 	private long lastUpdatedBy;
-	private Timestamp lastUpdateDate;
 	private long lastUpdateLogin;
+	private Timestamp lastUpdateDate;
+	private String sourceLang;
+	private long securityGroupId;
+	private long viewApplicationId;
+	private long territoryCode;
+	private String attributeCategory;
 	private String attribute1;
 	private String attribute2;
 	private String attribute3;
@@ -32,56 +36,56 @@ public class CalResourceAssign {
 	private String attribute13;
 	private String attribute14;
 	private String attribute15;
-	private String attributeCategory;
-	private long securityGroupId;
+	private String tag;
+	private String leafNode;
 	
-	public long getCalResourceAssignId() {
-		return calResourceAssignId;
+	public String getLookupType() {
+		return lookupType;
 	}
-	public void setCalResourceAssignId(long calResourceAssignId) {
-		this.calResourceAssignId = calResourceAssignId;
+	public void setLookupType(String lookupType) {
+		this.lookupType = lookupType;
 	}
-	public Date getStartDateTime() {
-		return startDateTime;
+	public String getLanguage() {
+		return language;
 	}
-	public void setStartDateTime(Date startDateTime) {
-		this.startDateTime = startDateTime;
+	public void setLanguage(String language) {
+		this.language = language;
 	}
-	public Date getEndDateTime() {
-		return endDateTime;
+	public String getLookupCode() {
+		return lookupCode;
 	}
-	public void setEndDateTime(Date endDateTime) {
-		this.endDateTime = endDateTime;
+	public void setLookupCode(String lookupCode) {
+		this.lookupCode = lookupCode;
 	}
-	public long getCalendarId() {
-		return calendarId;
+	public String getMeaning() {
+		return meaning;
 	}
-	public void setCalendarId(long calendarId) {
-		this.calendarId = calendarId;
+	public void setMeaning(String meaning) {
+		this.meaning = meaning;
 	}
-	public String getResourceTypeCode() {
-		return resourceTypeCode;
+	public String getDescription() {
+		return description;
 	}
-	public void setResourceTypeCode(String resourceTypeCode) {
-		this.resourceTypeCode = resourceTypeCode;
+	public void setDescription(String description) {
+		this.description = description;
 	}
-	public long getResourceId() {
-		return resourceId;
+	public String getEnableFlag() {
+		return enableFlag;
 	}
-	public void setResourceId(long resourceId) {
-		this.resourceId = resourceId;
+	public void setEnableFlag(String enableFlag) {
+		this.enableFlag = enableFlag;
 	}
-	public String getPrimaryCalendarFlag() {
-		return primaryCalendarFlag;
+	public Timestamp getStartDateActive() {
+		return startDateActive;
 	}
-	public void setPrimaryCalendarFlag(String primaryCalendarFlag) {
-		this.primaryCalendarFlag = primaryCalendarFlag;
+	public void setStartDateActive(Timestamp startDateActive) {
+		this.startDateActive = startDateActive;
 	}
-	public long getObjectVersionNumber() {
-		return objectVersionNumber;
+	public Timestamp getEndDateActive() {
+		return endDateActive;
 	}
-	public void setObjectVersionNumber(long objectVersionNumber) {
-		this.objectVersionNumber = objectVersionNumber;
+	public void setEndDateActive(Timestamp endDateActive) {
+		this.endDateActive = endDateActive;
 	}
 	public long getCreatedBy() {
 		return createdBy;
@@ -101,17 +105,47 @@ public class CalResourceAssign {
 	public void setLastUpdatedBy(long lastUpdatedBy) {
 		this.lastUpdatedBy = lastUpdatedBy;
 	}
+	public long getLastUpdateLogin() {
+		return lastUpdateLogin;
+	}
+	public void setLastUpdateLogin(long lastUpdateLogin) {
+		this.lastUpdateLogin = lastUpdateLogin;
+	}
 	public Timestamp getLastUpdateDate() {
 		return lastUpdateDate;
 	}
 	public void setLastUpdateDate(Timestamp lastUpdateDate) {
 		this.lastUpdateDate = lastUpdateDate;
 	}
-	public long getLastUpdateLogin() {
-		return lastUpdateLogin;
+	public String getSourceLang() {
+		return sourceLang;
 	}
-	public void setLastUpdateLogin(long lastUpdateLogin) {
-		this.lastUpdateLogin = lastUpdateLogin;
+	public void setSourceLang(String sourceLang) {
+		this.sourceLang = sourceLang;
+	}
+	public long getSecurityGroupId() {
+		return securityGroupId;
+	}
+	public void setSecurityGroupId(long securityGroupId) {
+		this.securityGroupId = securityGroupId;
+	}
+	public long getViewApplicationId() {
+		return viewApplicationId;
+	}
+	public void setViewApplicationId(long viewApplicationId) {
+		this.viewApplicationId = viewApplicationId;
+	}
+	public long getTerritoryCode() {
+		return territoryCode;
+	}
+	public void setTerritoryCode(long territoryCode) {
+		this.territoryCode = territoryCode;
+	}
+	public String getAttributeCategory() {
+		return attributeCategory;
+	}
+	public void setAttributeCategory(String attributeCategory) {
+		this.attributeCategory = attributeCategory;
 	}
 	public String getAttribute1() {
 		return attribute1;
@@ -203,16 +237,16 @@ public class CalResourceAssign {
 	public void setAttribute15(String attribute15) {
 		this.attribute15 = attribute15;
 	}
-	public String getAttributeCategory() {
-		return attributeCategory;
+	public String getTag() {
+		return tag;
 	}
-	public void setAttributeCategory(String attributeCategory) {
-		this.attributeCategory = attributeCategory;
+	public void setTag(String tag) {
+		this.tag = tag;
 	}
-	public long getSecurityGroupId() {
-		return securityGroupId;
+	public String getLeafNode() {
+		return leafNode;
 	}
-	public void setSecurityGroupId(long securityGroupId) {
-		this.securityGroupId = securityGroupId;
+	public void setLeafNode(String leafNode) {
+		this.leafNode = leafNode;
 	}
 }

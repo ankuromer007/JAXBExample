@@ -2,39 +2,46 @@ package com.neevtech.jaxb.model.skills;
 
 import java.sql.Timestamp;
 
-public class TemplateSkillMap {
-	private long templateSkillMapId;
+public class SkillsTemplate1 {
 	private long templateId;
-	private long skillId;
-	private long profId;
+	private String templateNameExt;
+	private String templateNameInt;
+	private String templateDesc;
+	private String createdByUser;
 	private long createdBy;
 	private Timestamp creationDate;
 	private long lastUpdatedBy;
 	private Timestamp lastUpdateDate;
 	
-	public long getTemplateSkillMapId() {
-		return templateSkillMapId;
-	}
-	public void setTemplateSkillMapId(long templateSkillMapId) {
-		this.templateSkillMapId = templateSkillMapId;
-	}
 	public long getTemplateId() {
 		return templateId;
 	}
 	public void setTemplateId(long templateId) {
 		this.templateId = templateId;
 	}
-	public long getSkillId() {
-		return skillId;
+	public String getTemplateNameExt() {
+		return templateNameExt;
 	}
-	public void setSkillId(long skillId) {
-		this.skillId = skillId;
+	public void setTemplateNameExt(String templateNameExt) {
+		this.templateNameExt = templateNameExt;
 	}
-	public long getProfId() {
-		return profId;
+	public String getTemplateNameInt() {
+		return templateNameInt;
 	}
-	public void setProfId(long profId) {
-		this.profId = profId;
+	public void setTemplateNameInt(String templateNameInt) {
+		this.templateNameInt = templateNameInt;
+	}
+	public String getTemplateDesc() {
+		return templateDesc;
+	}
+	public void setTemplateDesc(String templateDesc) {
+		this.templateDesc = templateDesc;
+	}
+	public String getCreatedByUser() {
+		return createdByUser;
+	}
+	public void setCreatedByUser(String createdByUser) {
+		this.createdByUser = createdByUser;
 	}
 	public long getCreatedBy() {
 		return createdBy;
@@ -59,5 +66,5 @@ public class TemplateSkillMap {
 	}
 	public void setLastUpdateDate(Timestamp lastUpdateDate) {
 		this.lastUpdateDate = lastUpdateDate;
-	}	
+	}
 }
